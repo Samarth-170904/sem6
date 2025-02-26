@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forts - Register</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="famous.html">Famous Forts</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Register for Forts Website</h1>
+        <p>Create an account to explore more about magnificent forts around the globe.</p>
+
+        <!-- Registration Form -->
+        <div class="auth-section">
+            <h2>Register</h2>
+            
+            <div class="registration-form">
+                <form id="registration-form" action="#" method="POST" onsubmit="return validateRegistration(event)">
+                    <label for="reg-name">Full Name:</label>
+                    <input type="text" id="reg-name" name="name" required placeholder="Enter your full name">
+                    <span id="reg-name-error" class="error-message" style="display: none; color: red; font-size: 0.9rem;">Please enter a valid name (letters and spaces only, at least 2 characters).</span>
+                    
+                    <label for="reg-email">Email:</label>
+                    <input type="email" id="reg-email" name="email" required placeholder="Enter your email">
+                    <span id="reg-email-error" class="error-message" style="display: none; color: red; font-size: 0.9rem;">Please enter a valid email address (e.g., user@example.com).</span>
+                    
+                    <label for="reg-mobile">Mobile Number:</label>
+                    <input type="tel" id="reg-mobile" name="mobile" required placeholder="Enter your mobile number (10 digits, e.g., 1234567890)">
+                    <span id="reg-mobile-error" class="error-message" style="display: none; color: red; font-size: 0.9rem;">Please enter a valid 10-digit mobile number (e.g., 1234567890).</span>
+                    
+                    <label for="reg-password">Password:</label>
+                    <input type="password" id="reg-password" name="password" required placeholder="Create a password">
+                    <span id="reg-password-error" class="error-message" style="display: none; color: red; font-size: 0.9rem;">Password must be at least 6 characters long and include at least one letter and one number.</span>
+                    
+                    
+                    
+                    <button type="submit">Register</button>
+                    <p class="register-prompt">Already have an account? <a href="home.html">Login</a>.</p>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>© 2025 Forts Website</p>
+    </footer>
+
+    <script src="validation.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>

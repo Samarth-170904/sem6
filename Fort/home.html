@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forts - Home</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="famous.html">Famous Forts</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Welcome to the World of Forts</h1>
+        <p>Explore the history and beauty of magnificent forts around the globe.</p>
+
+        <!-- Login Section -->
+        <div class="auth-section">
+            <h2>Login</h2>
+            
+            <div class="login-form">
+                <form id="login-form" action="#" method="POST" onsubmit="return validateLogin(event)">
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" name="email" required placeholder="Enter your email">
+                    <span id="login-email-error" class="error-message" style="display: none; color: red; font-size: 0.9rem;">Please enter a valid email address (e.g., user@example.com).</span>
+                    
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" name="password" required placeholder="Enter your password">
+                    <span id="login-password-error" class="error-message" style="display: none; color: red; font-size: 0.9rem;">Password must be at least 6 characters long.</span>
+                    
+                    <button type="submit">Login</button>
+                    <p class="register-prompt">If you are new, please <a href="register.html">register</a>.</p>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>© 2025 Forts Website</p>
+    </footer>
+
+    <script src="validation.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>
