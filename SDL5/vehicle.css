@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background-image: url('v.jpg'); /* URL to your image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    height: 100vh; /* Set height to 100% of viewport height */
+    margin: 0; /* Remove default body margins */
+    color: white; /* Set text color to white for better readability */
+}
+
+.vehicle-info {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    color: black; /* Set text color to black for better readability */
+}
+
+.vehicle-type {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    color: black; /* Set text color to black for better readability */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="number"], select {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 15px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    width: 100%;
+    height: 40px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
